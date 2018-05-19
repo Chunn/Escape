@@ -25,7 +25,7 @@ public class Enemy {
         x -= VELOCITY_X;
         if (x < -width) {
             x = GameActivity.WIDTH + 100;
-            y = (int) Math.floor(Math.random() * (GameActivity.HEIGHT - height));
+            y = RandomNumberGenerator.getRandInBetween(20,GameActivity.HEIGHT);
         }
     }
     public void render(Painter painter){

@@ -101,5 +101,4 @@ public class Painter {
         canvas.drawBitmap(bitmap, scrRect, dstRect, paint);
     }
 
-
 }

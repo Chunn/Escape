@@ -140,7 +140,6 @@ public class GameView extends SurfaceView implements Runnable{
             canvas.getClipBounds(gameImageDst);//lấy 1 hình chữ nhật bao quanh vingf cắt của gameImageDSt
             canvas.drawBitmap(gameImage,gameImageSrc,gameImageDst,null);
             getHolder().unlockCanvasAndPost(canvas);
-
         }
     }
 

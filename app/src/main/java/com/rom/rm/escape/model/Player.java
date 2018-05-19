@@ -35,7 +35,7 @@ public class Player {
         if (y<0){
             y=0;
         }else if (y> GameActivity.HEIGHT){
-            y=GameActivity.HEIGHT;
+            y=GameActivity.HEIGHT-100;
         }
     }
     private void left(){

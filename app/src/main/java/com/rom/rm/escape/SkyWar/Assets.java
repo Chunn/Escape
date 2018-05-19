@@ -67,7 +67,7 @@ public class Assets {
         gameOverSound=loadSound("lose.mp3");
 
         typeface=Typeface.create(Typeface.createFromAsset(GameActivity.assets,"UVNBanhMi.TTF"),Typeface.BOLD);
-        run=new Animation(true,new Frame(menuBackground,GameView.FPS));
+        run=new Animation(true,new Frame(menuBackground,GameView.FPS), new Frame(menuBackground,GameView.FPS));
 
 
     }

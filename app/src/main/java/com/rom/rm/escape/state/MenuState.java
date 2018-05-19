@@ -19,6 +19,7 @@ public class MenuState extends State {
     public void init() {
         playButton=new UIButton(700,330,1300,430, Assets.btn_play,Assets.btn_play_down);
         scoreButton=new UIButton(700,630,1300,700,Assets.btn_score_down,Assets.btn_score);
+        Assets.playSound(Assets.soundId);
     }
 
     @Override
@@ -33,7 +34,6 @@ public class MenuState extends State {
         painter.drawImage(Assets.menuBackground,0,0,GameActivity.WIDTH,GameActivity.HEIGHT);
         playButton.render(painter);
         scoreButton.render(painter);
-        Assets.playSound(Assets.soundId);
         Log.d("render","render");
     }
 
